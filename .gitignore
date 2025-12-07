@@ -1,0 +1,52 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+terraform.tfvars
+*.backup
+
+# AWS credentials
+*.pem
+*.key
+*.json 
+.aws/
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output files
+outputs.json
+stack1_outputs.json
+stack2_outputs.json
+
+# Screenshots
+Screenshots/
+
+# Logs
+*.log

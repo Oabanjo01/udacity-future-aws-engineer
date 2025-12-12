@@ -1,0 +1,74 @@
+FINAL SUBMISSION STEPS
+======================
+
+1. ADD SCREENSHOTS
+   ----------------
+   Add all required screenshots to the "screenshots/" folder:
+   
+   ✓ terraform_apply_stack1_output.png
+   ✓ terraform_apply_stack2_output.png
+   ✓ aws_s3_bucket.png
+   ✓ aws_aurora_database.png
+   ✓ aws_bedrock_kb.png
+   ✓ pg_extension_query.png
+   ✓ bedrock_kb_table.png
+   ✓ streamlit_app_interface.png
+   ✓ query_example_with_sources.png
+   ✓ 010-valid-prompt-sample-output.png
+
+   To generate the validation screenshot:
+   $ python intelligent-document-search/demo_validation.py
+   (Screenshot the terminal output)
+
+
+2. CREATE SUBMISSION ZIP
+   ----------------------
+   $ python create_submission.py
+   
+   Enter your name when prompted.
+   This creates: LastName_FirstName_ProjectSubmission.zip
+
+
+3. WHAT'S INCLUDED
+   ----------------
+   ✓ screenshots/ folder with all images
+   ✓ intelligent-document-search/ folder with:
+     - app.py, bedrock_utils.py
+     - stack1/ and stack2/ Terraform configs
+     - modules/ folder
+     - scripts/ folder with PDFs
+     - requirements.txt
+   ✓ temperature_top_p_explanation.pdf
+   ✓ LICENSE
+
+
+4. WHAT'S EXCLUDED (Automatically)
+   --------------------------------
+   ✓ .terraform/ folders (1.5GB - not needed!)
+   ✓ venv/ folders
+   ✓ __pycache__/ folders
+   ✓ .git/ folder
+   ✓ Extra .md documentation files
+   ✓ Helper scripts
+
+
+5. VERIFY & SUBMIT
+   ----------------
+   Check the zip file size: Should be ~50-100 MB
+   $ ls -lh LastName_FirstName_ProjectSubmission.zip
+   
+   Then submit to the course portal!
+
+
+TROUBLESHOOTING
+===============
+
+Q: Zip file too large?
+A: Make sure you ran create_submission.py (not manual zip)
+
+Q: Missing files?
+A: Check that screenshots/ folder has all 10 images
+
+Q: Need to recreate?
+A: Just run create_submission.py again - it's safe to rerun
+

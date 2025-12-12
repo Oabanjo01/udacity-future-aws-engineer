@@ -1,0 +1,58 @@
+HOW TO CREATE YOUR SUBMISSION PACKAGE
+======================================
+
+STEP 1: Add Screenshots
+------------------------
+Make sure you have all 10 required screenshots in the screenshots/ folder.
+
+To generate the validation screenshot:
+$ python intelligent-document-search/demo_validation.py
+(Screenshot the terminal output and save as screenshots/010-valid-prompt-sample-output.png)
+
+
+STEP 2: Create the Zip File
+----------------------------
+$ ./make_submission.sh
+
+Enter your name when prompted.
+
+
+STEP 3: Verify
+--------------
+The script will show:
+- File size (should be ~10-20 MB)
+- No .terraform folders included ✅
+- Key files are present ✅
+
+
+STEP 4: Submit
+--------------
+Upload the LastName_FirstName_ProjectSubmission.zip file to the course portal.
+
+
+WHAT'S INCLUDED:
+----------------
+✓ screenshots/ folder
+✓ intelligent-document-search/ folder (all code, Terraform configs, PDFs)
+✓ temperature_top_p_explanation.pdf
+✓ LICENSE
+
+
+WHAT'S EXCLUDED:
+----------------
+✓ .terraform/ folders (1.5GB - not needed!)
+✓ venv/ folders
+✓ .git/ folder
+✓ Extra documentation .md files
+✓ Helper scripts
+
+
+TROUBLESHOOTING:
+----------------
+If the script doesn't run:
+$ chmod +x make_submission.sh
+$ ./make_submission.sh
+
+If you get "command not found":
+$ bash make_submission.sh
+
